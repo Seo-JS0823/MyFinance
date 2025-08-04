@@ -1,0 +1,32 @@
+.signin-radio-box {
+    width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    margin-right: auto;
+}
+.signin-radio-box input {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+.signin-box {
+    width: 100%;
+    padding: 5px;
+    align-items: center;
+}
+.bar {
+    background-color: rgba(180, 220, 90, 0.5);
+    height: 5px;
+    border: none;
+}
+.gender-box {
+    margin-left: 10px;
+    width: 200px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 12px;
+}
+.btn-signin {
+    width: 100px;
+    padding: 0;
+}

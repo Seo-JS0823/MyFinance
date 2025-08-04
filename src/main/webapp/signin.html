@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/signin.css">
+    <title>나만의 가계부</title>
+</head>
+<body>
+    <header>
+        <div class="side-bar">
+            <a href="#">가계부 홈</a>
+            <a href="#">가계부 검색</a>
+            <a href="#">가계부 작성</a>
+        </div>
+    </header>
+    <div class="content-main">
+        <div class="login">
+            <div class="signin-box">
+                <form class="login-form" action="/myfinance/signinaction.jsp" method="post">
+                    <div class="login-box">
+                        <input type="text" name="username" placeholder="성함을 입력하세요."/>
+                    </div>
+                    <div class="login-box">
+                        <input type="text" name="userid" placeholder="아이디를 입력하세요."/>
+                    </div>
+                    <div class="login-box">
+                        <input type="password" name="password" placeholder="비밀번호를 입력하세요."/>
+                    </div>
+                    <div class="login-box">
+                        <input type="text" name="email" placeholder="이메일을 입력하세요."/>
+                    </div>
+                    <div class="signin-radio-box">
+                        <div>
+                            <label>
+                                생년월일<input type="date" name="birthday" value="1998-12-01"/>
+                            </label><hr class="bar"><br>
+                            <div>
+                                <label>성별</label>
+                                <div class="gender-box">
+                                    <label>남자<input type="radio" name="gender" value="male"></label>
+                                    <label>여자<input type="radio" name="gender" value="female"></label>
+                                </div>
+                            </div>
+                            <input type="submit" value="회원가입" class="btn-signin"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

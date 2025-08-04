@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Ownglyph_meetme-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/Ownglyph_meetme-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ownglyph_corncorn-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@keyframes side-bar-a {
+    0% {
+        background-position: 0% 45%;
+    }
+    100% {
+        background-position: 100% 5%;
+    }
+}
+@keyframes side-glow {
+    0% {
+        text-shadow: 0 0 1px white,
+                        0 0 5px black;
+    }
+    100% {
+        text-shadow: 0 0 1px black
+                        0 0 5px white;
+    }
+}
+.content-main {
+    margin-left: 200px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.side-bar {
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: bisque;
+    padding-top: 20px;
+}
+.side-bar a {
+    display: block;
+    padding: 15px 12px;
+    margin: 10px 15px 5px 5px;
+    text-decoration: none;
+    font-family: 'Ownglyph_corncorn-Rg';
+    font-size: 25px;
+    font-weight: normal;
+    color: black;
+    border: 2px solid;
+    border-style: hidden;
+    border-collapse: collapse;
+    border-color: #555;
+    border-radius: 30px;
+}
+.side-bar a:hover {
+    background-image: linear-gradient(270deg, white, lightblue, skyblue, lightgreen, green, yellow, lightyellow, lightblue, skyblue, white);
+    background-clip: text;
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: side-bar-a 30000ms linear infinite;
+    font-size: 35px;
+    font-weight: 700;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/content.css">
+    <title>나만의 가계부</title>
+</head>
+<body>
+    <header>
+        <div class="side-bar">
+            <a href="#">가계부 홈</a>
+            <a href="#">가계부 검색</a>
+            <a href="#">가계부 작성</a>
+        </div>
+    </header>
+    <div class="content-main">
+        <div class="login">
+            <form class="login-form" method="post">
+                <div>
+                    <img src="images/logo.png" id="login-logo"/>
+                </div>
+                <div class="login-box">
+                    <input type="text" placeholder="아이디를 입력해주세요." name="userid"/>
+                </div>
+                <div class="login-box">
+                    <input type="password" placeholder="비밀번호를 입력해주세요." name="password"/>
+                </div>
+                <div class="login-button">
+                    <button type="submit" data-action="/myfinance/search">계정찾기</button>
+                    <button type="submit" data-action="/myfinance/signin">회원가입</button>
+                    <button type="submit" data-action="/myfinance/login">로그인</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        let btnEls = document.querySelectorAll('[type=submit]');
+        let formEl = document.querySelector('.login-form');
+        let idEl = document.querySelector('[name=userid]');
+        let pwEl = document.querySelector('[name=password]');
+        btnEls.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                let target = btn.getAttribute('data-action');
+                
+                formEl.setAttribute('action', target);
+            });
+        });
+    </script>
+</body>
+</html>
